@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import FeedbackForm from '../components/FeedbackForm';
 import HomeLayout from '../components/layouts/HomeLayout';
 
 export default function Home() {
@@ -13,7 +14,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <HomeLayout>Neon Lounge &amp; Bar</HomeLayout>
+      <HomeLayout>
+        <section className="w-full max-w-lg">
+          <h1 className="text-center mb-5 text-xl text-[#2A2B50] font-bold">
+            Neon Lounge &amp; Bar
+          </h1>
+          <FeedbackForm />
+        </section>
+      </HomeLayout>
     </div>
   );
 }
