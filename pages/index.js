@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import HomeLayout from '../components/layouts/HomeLayout';
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>Neon Lounge &amp; Bar</main>
+      <HomeLayout>Neon Lounge &amp; Bar</HomeLayout>
     </div>
   );
 }
