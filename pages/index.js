@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import FeedbackForm from '../components/FeedbackForm';
 import HomeLayout from '../components/layouts/HomeLayout';
+import ThankYouMessage from '../components/ThankYouMessage';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
             Neon Lounge &amp; Bar
           </h1>
           <FeedbackForm />
+          <ThankYouMessage />
         </section>
       </HomeLayout>
     </div>
