@@ -2,7 +2,7 @@ export default function FeedbackForm() {
   return (
     <div>
       <form>
-        <label htmlFor="">First Name</label>
+        <div>Divi</div>
       </form>
     </div>
   );
