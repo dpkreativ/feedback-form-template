@@ -1,5 +1,6 @@
 import HomeLayout from '@/components/layouts/HomeLayout';
 import FeedbackForm from '@/components/ui/FeedbackForm';
+import ThankYouMessage from '@/components/ui/ThankYouMessage';
 import Head from 'next/head';
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
 
       <HomeLayout>
         <section className="md:rounded-3xl md:shadow-lg bg-[#fcfcfc37] overflow-hidden">
-          <FeedbackForm />
+          {/* <FeedbackForm /> */}
+          <ThankYouMessage />
         </section>
       </HomeLayout>
     </>
