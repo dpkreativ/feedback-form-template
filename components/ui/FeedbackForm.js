@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function FeedbackForm() {
   return (
-    <div className="grid lg:grid-cols-2">
+    <div className="grid lg:grid-cols-2 min-h-[80vh] place-items-center">
       <div className="bg-[#1e26ff8c] w-full h-96 md:h-full relative">
         <Image src={`/Saly-35.png`} fill style={{ objectFit: 'contain' }} />
       </div>

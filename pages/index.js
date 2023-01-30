@@ -14,8 +14,8 @@ export default function Home() {
       </Head>
 
       <HomeLayout>
-        <section className="md:rounded-3xl md:shadow-lg bg-[#fcfcfc37] overflow-hidden">
-          {/* <FeedbackForm /> */}
+        <section className="md:rounded-3xl md:shadow-lg bg-[#fcfcfc37] overflow-hidden max-w-7xl mx-auto">
+          <FeedbackForm />
           <ThankYouMessage />
         </section>
       </HomeLayout>
