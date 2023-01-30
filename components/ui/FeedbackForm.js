@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 export default function FeedbackForm() {
   return (
-    <div>
-      <div className="bg-[#1e26ff8c] w-full h-96 relative">
+    <div className="grid lg:grid-cols-2">
+      <div className="bg-[#1e26ff8c] w-full h-96 md:h-full relative">
         <Image src={`/Saly-35.png`} fill style={{ objectFit: 'contain' }} />
       </div>
-      <div className="px-5 py-24">
+      <div className="p-12 lg:p-24">
         <div className="text-center grid gap-6 mb-16 text-[#434058]">
           <h1 className="text-4xl font-bold">
             We'd love to hear back from you
