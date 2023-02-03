@@ -8,7 +8,12 @@ export default function FeedbackForm() {
   return (
     <div className="grid lg:grid-cols-2 min-h-[80vh] place-items-center">
       <div className="bg-[#1e26ff8c] w-full h-96 md:h-full relative">
-        <Image src={`/Saly-35.png`} fill style={{ objectFit: 'contain' }} />
+        <Image
+          src={`/Saly-35.png`}
+          fill
+          style={{ objectFit: 'contain' }}
+          alt="3d illustration"
+        />
       </div>
       <div className="p-12 lg:p-24">
         <div className="text-center grid gap-6 mb-16 text-[#434058]">
