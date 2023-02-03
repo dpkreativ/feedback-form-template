@@ -1,6 +1,10 @@
 import Image from 'next/image';
 
 export default function FeedbackForm() {
+  async function handleSubmit(e) {
+    e.preventDefault();
+  }
+
   return (
     <div className="grid lg:grid-cols-2 min-h-[80vh] place-items-center">
       <div className="bg-[#1e26ff8c] w-full h-96 md:h-full relative">
@@ -15,7 +19,7 @@ export default function FeedbackForm() {
             Fill out the form below and we'll be in touch as soon as possible
           </p>
         </div>
-        <form className="grid gap-16">
+        <form className="grid gap-16" onSubmit={handleSubmit}>
           <div className="border-2 border-[#434058] rounded-2xl p-4">
             <input
               type="text"
@@ -23,6 +27,7 @@ export default function FeedbackForm() {
               id="name"
               placeholder="Your name"
               className="w-full outline-none placeholder:text-sm placeholder:font-light placeholder:text-[#43405874]"
+              onChange={(e) => console.log(e.target.value)}
             />
           </div>
           <div className="border-2 border-[#434058] rounded-2xl p-4">
@@ -31,10 +36,14 @@ export default function FeedbackForm() {
               id="feedback"
               placeholder="Your feedback"
               className="w-full outline-none placeholder:text-sm placeholder:font-light placeholder:text-[#43405874]"
+              onChange={(e) => console.log(e.target.value)}
             ></textarea>
           </div>
           <div className="mx-auto">
-            <button className="rounded-2xl px-4 py-3 bg-[#434058] text-[#FCFCFC]">
+            <button
+              type="submit"
+              className="rounded-2xl px-4 py-3 bg-[#434058] text-[#FCFCFC]"
+            >
               Submit feedback
             </button>
           </div>

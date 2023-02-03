@@ -1,3 +1,7 @@
 export default function HomeLayout({ children }) {
-  return <main className="md:p-10 lg:p-16">{children}</main>;
+  return (
+    <main className="md:px-10 md:py-5 lg:px-16 grid place-items-center min-h-screen">
+      {children}
+    </main>
+  );
 }
