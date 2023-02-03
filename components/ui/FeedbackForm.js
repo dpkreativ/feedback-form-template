@@ -13,6 +13,7 @@ export default function FeedbackForm() {
           fill
           style={{ objectFit: 'contain' }}
           alt="3d illustration"
+          priority
         />
       </div>
       <div className="p-12 lg:p-24">
